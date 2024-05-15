@@ -2,21 +2,14 @@ import Header from './components/Header';
 import './App.css';
 // import CampsiteCard from './features/campsites/CampsiteCard.js';
 // import { CAMPSITES } from './app/shared/CAMPSITES';
-import CampsitesList from './features/campsites/CampsitesList.js';
+import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      {/* <Navbar dark color='primary' sticky='top' expand='md'>
-        <Container>
-          <NavbarBrand href='/'>
-            <img src={NucampLogo} alt='nucamp logo' />
-          </NavbarBrand>
-        </Container>
-      </Navbar> */}
+    <div className='App'>
       <Header />
-      <CampsitesList />
+      <CampsitesDirectoryPage />
       <Footer />
     </div>
   );
