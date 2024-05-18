@@ -1,13 +1,18 @@
+import { Routes, Route } from 'react-router-dom';
+import ContactPage from './pages/ContactPage';
+import HomePage from './pages/HomePage';
 import Header from './components/Header';
+import Footer from './components/Footer';
+import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
 import './App.css';
 // import CampsiteCard from './features/campsites/CampsiteCard.js';
 // import { CAMPSITES } from './app/shared/CAMPSITES';
-import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
-import Footer from './components/Footer';
-import { Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import ContactPage from './pages/ContactPage';
-import { Controller } from 'react-spring';
+
+
+
+
+
+// import { Controller } from 'react-spring';
 
 function App() {
   return (
@@ -21,6 +26,7 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
+
 
 export default App;
