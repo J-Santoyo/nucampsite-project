@@ -4,12 +4,20 @@ import './App.css';
 // import { CAMPSITES } from './app/shared/CAMPSITES';
 import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
 import Footer from './components/Footer';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import ContactPage from './pages/ContactPage';
+import { Controller } from 'react-spring';
 
 function App() {
   return (
     <div className='App'>
       <Header />
-      <CampsitesDirectoryPage />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='contact' element={<ContactPage />} />
+        <Route path='directory' element={<CampsitesDirectoryPage />} />
+      </Routes>
       <Footer />
     </div>
   );
