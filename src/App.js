@@ -13,7 +13,7 @@ import { fetchCampsites } from './features/campsites/campsitesSlice';
 import { fetchPartners } from './features/partners/partnersSlice';
 // import CampsiteCard from './features/campsites/CampsiteCard.js';
 // import { CAMPSITES } from './app/shared/CAMPSITES';
-
+import { fetchPromotions } from './features/promotions/promotionsSlice';
 
 
 
@@ -25,6 +25,7 @@ function App() {
   useEffect(() => {
     dispatch(fetchCampsites());
     dispatch(fetchPartners());
+    dispatch(fetchPromotions());
   }, [dispatch]);
   return (
     <div className='App'>
